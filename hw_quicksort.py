@@ -19,6 +19,7 @@ def getDataInput() -> list:
 
     return data
 def outputCSV(hw_dict):
+    hw_dict = dict(sorted(hw_dict.items()))
     with open('output_hw.csv', 'w') as f:
         writer = csv.writer(f)
         for key, value in hw_dict.items():
@@ -40,5 +41,5 @@ def main():
             dModels.update({sModel: 1})
 
     outputCSV(dModels)
-
-main()
+if __name__ == "__main__":
+    main()
