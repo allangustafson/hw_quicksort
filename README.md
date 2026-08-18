@@ -14,10 +14,9 @@ From the command line navigate to where you would like this project to be and ru
        - State
      Click OK to save
 
-2. Click the 3 dots next to Department column.
-     Select "contains" and type your department.
-   Click the 3 dots next to State column.
-     uncheck "retired" and "missing"
+2. Click the 3 dots next to Department column. Select "contains" and type your department.
+   
+   Click the 3 dots next to State column. Uncheck "retired" and "missing"
 
 3. In top right, export and select csv.
 
