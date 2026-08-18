@@ -18,12 +18,12 @@ From the command line navigate to where you would like this project to be and ru
      uncheck "retired" and "missing"
 
 3. In top right, export and select csv.
-4. Rename the csv to input_hw.csv and place it in the directory you cloned from here alongside the python script.
+4. Rename the csv to `input_hw.csv` and place it in the directory you cloned from here alongside the python script.
 
 ## Run the script
 
 From the command line navigate to the location of the script and run this command
 `python3 hw_quicksort.py`
 
-The script will output a csv with the following columns that you can copy into you spreadsheet
+The script will output a csv named `output_hw.csv` with the following columns. You can copy these coloumns into you spreadsheet
 category | model | quantity 
