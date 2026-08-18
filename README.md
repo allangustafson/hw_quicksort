@@ -30,5 +30,8 @@ From the command line navigate to the location of the script and run this comman
 
 `python3 hw_quicksort.py`
 
-The script will output a csv named `output_hw.csv` with the following columns. You can copy these coloumns into you spreadsheet
+The script will output a csv named `output_hw.csv` with the following columns.
+
 category | model | quantity 
+
+You can copy these coloumns into you spreadsheet
