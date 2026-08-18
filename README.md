@@ -9,10 +9,10 @@ From the command line navigate to where you would like this project to be and ru
 1. Hardware Assets > Asset Estate > (gear icon in top right) > edit columns
    
      Add the following columns in this order
-   
-       - Model
-       - Department
-       - State
+      
+      - Model
+      - Department
+      - State
    
      Click OK to save
 
