@@ -1,6 +1,7 @@
 ## Clone this repo
 
 From the command line navigate to where you would like this project to be and run this command
+
 `git clone git@github.com:allangustafson/hw_quicksort.git`
 
 ## Get data from ServiceNow HAM
@@ -23,6 +24,7 @@ From the command line navigate to where you would like this project to be and ru
 ## Run the script
 
 From the command line navigate to the location of the script and run this command
+
 `python3 hw_quicksort.py`
 
 The script will output a csv named `output_hw.csv` with the following columns. You can copy these coloumns into you spreadsheet
