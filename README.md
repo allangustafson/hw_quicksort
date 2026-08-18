@@ -7,6 +7,7 @@ From the command line navigate to where you would like this project to be and ru
 ## Get data from ServiceNow HAM
 
 1. Hardware Assets > Asset Estate > (gear icon in top right) > edit columns
+   
      Add the following columns in this order
        - Model
        - Department
@@ -19,6 +20,7 @@ From the command line navigate to where you would like this project to be and ru
      uncheck "retired" and "missing"
 
 3. In top right, export and select csv.
+
 4. Rename the csv to `input_hw.csv` and place it in the directory you cloned from here alongside the python script.
 
 ## Run the script
