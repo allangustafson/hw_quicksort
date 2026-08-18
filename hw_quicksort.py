@@ -18,12 +18,29 @@ def getDataInput() -> list:
         print(f"General error: {format(err)}")
 
     return data
+
+
 def outputCSV(hw_dict):
     hw_dict = dict(sorted(hw_dict.items()))
     with open('output_hw.csv', 'w') as f:
         writer = csv.writer(f)
         for key, value in hw_dict.items():
-            writer.writerow([key, value])
+            if ("imac" in key.lower()):
+                category = "AIO"
+            elif ("latitude" in key.lower() or "thinkbook" in key.lower() or 
+                  "thinkpad" in key.lower() or "macbook" in key.lower() or
+                  "laptop" in key.lower() or "notebook" in key.lower()):
+                category = "Laptop"
+            elif ("optiplex" in key.lower() or "precision" in key.lower() or 
+                  "thinkcentre" in key.lower() or "thinkstation" in key.lower() or
+                  "tower" in key.lower() or "workstation" in key.lower()):
+                category = "Desktop"
+            elif ("ipad" in key.lower() or "surface" in key.lower() or 
+                  "galaxy" in key.lower()):
+                category = "Tablet"
+            else:
+                category = "Other"
+            writer.writerow([category, key, value])
 
     
 def main():
@@ -38,6 +55,7 @@ def main():
         if sModel in dModels:
             dModels[sModel] += 1
         else:
+            category = "single"
             dModels.update({sModel: 1})
 
     outputCSV(dModels)
