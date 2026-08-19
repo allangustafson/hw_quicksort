@@ -21,9 +21,18 @@ def getDataInput() -> list:
 
 
 def outputCSV(hw_dict):
+    '''
+    Categorize the models and output the CSV
+    '''
+    
+    # Sort the dictionary of models
     hw_dict = dict(sorted(hw_dict.items()))
+    
+    # Open CSV for write
     with open('output_hw.csv', 'w') as f:
         writer = csv.writer(f)
+
+        # Categorize by model
         for key, value in hw_dict.items():
             if ("imac" in key.lower()):
                 category = "AIO"
@@ -40,6 +49,8 @@ def outputCSV(hw_dict):
                 category = "Tablet"
             else:
                 category = "Other"
+
+            # Output CSV
             writer.writerow([category, key, value])
 
     
@@ -55,9 +66,10 @@ def main():
         if sModel in dModels:
             dModels[sModel] += 1
         else:
-            category = "single"
             dModels.update({sModel: 1})
 
     outputCSV(dModels)
+
+
 if __name__ == "__main__":
     main()
